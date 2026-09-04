@@ -5,6 +5,7 @@ public class Movimento : MonoBehaviour
     public float Vel = 5f;
     public float FPulo = 7f;
 
+    private bool IsGrounded;
     private Rigidbody Corpo;
 
     void Start()
@@ -28,9 +29,27 @@ public class Movimento : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded)
         {
             Corpo.AddForce(Vector3.up * FPulo, ForceMode.Impulse);
+
+            IsGrounded = false;
+        }
+    }
+
+    void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            IsGrounded = true;
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            IsGrounded = false;
         }
     }
 }

@@ -205,12 +205,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9519888, z: -0, w: 0.30613276}
-  m_LocalPosition: {x: -9.3, y: -4.43, z: 9.9}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0035533905, y: 1, z: 15.636669}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1011165939}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
@@ -566,11 +566,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 1
---- !u!4 &1011165939 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 24a7502c64134b4419605428e7cd716b, type: 3}
-  m_PrefabInstance: {fileID: 1215192866}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &1011165940
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -590,8 +585,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.8114624, y: 4.196692, z: 1.2848153}
-  m_Center: {x: 0.4057344, y: -0.18367839, z: -0.97144794}
+  m_Size: {x: 1.8114624, y: 4.0903273, z: 1.2848153}
+  m_Center: {x: 0.4057344, y: -0.13049543, z: -0.97144794}
 --- !u!114 &1011165941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,7 +600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vel: 5
-  FPulo: 2
+  FPulo: 5
 --- !u!1001 &1215192866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -658,6 +653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "policial do marc\xE3o"
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 24a7502c64134b4419605428e7cd716b, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 24a7502c64134b4419605428e7cd716b, type: 3}
@@ -665,10 +664,7 @@ PrefabInstance:
     - {fileID: 8821623529969584324, guid: 24a7502c64134b4419605428e7cd716b, type: 3}
     - {fileID: -4714817154256824709, guid: 24a7502c64134b4419605428e7cd716b, type: 3}
     - {fileID: 4767400413853537203, guid: 24a7502c64134b4419605428e7cd716b, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 24a7502c64134b4419605428e7cd716b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 330585546}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 24a7502c64134b4419605428e7cd716b, type: 3}
       insertIndex: -1
@@ -687,4 +683,5 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 451578766}
+  - {fileID: 330585546}
   - {fileID: 1215192866}
